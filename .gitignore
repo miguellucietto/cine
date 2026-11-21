@@ -7,8 +7,15 @@
 *.dll
 *.so
 *.dylib
-*.a
-*.o
+
+# Languages ignored files
+c/*.a
+c/*.o
+cpp/*.a
+cpp/*.o
+rust/*.a
+rust/*.o
+
 
 # Test binary, built with `go test -c`
 *.test

@@ -7,7 +7,7 @@
 | Language | Status | Folder |
 | --- | --- | --- |
 | Go | Implemented | [`go/`](go/) |
-| C | Planned | [`c/`](c/) |
+| C | Implemented | [`c/`](c/) |
 | C++ | Planned | [`cpp/`](cpp/) |
 | C# | Planned | [`csharp/`](csharp/) |
 | Java | Planned | [`java/`](java/) |
@@ -17,29 +17,7 @@
 
 Go is the only implementation currently available. See [`go/README.md`](go/README.md) for installation, usage, supported types, and parsing behavior. Planned language folders contain only a status README.
 
-## Quick start (Go)
-
-```sh
-cd go
-go test ./...
-```
-
-```go
-package main
-
-import cine "github.com/miguellucietto/cine-go"
-
-func main() {
-	config := cine.New("config.json", cine.RejectUnknown)
-	config.Prop("theme", "light")
-	config.Prop("ports", []int{8080})
-	properties, err := config.Parse()
-	if err != nil {
-		panic(err)
-	}
-	_ = properties
-}
-```
+*Every* implementation is maintained in its own folder and repository history. Each implementation has its own *README.md* file, containing installation, usage, examples, and parsing behavior details.
 
 ## Repository layout
 
@@ -58,7 +36,7 @@ func main() {
 └── rust/          # Planned Rust implementation
 ```
 
-Each language folder has an independent Git history and release lifecycle. The `roadmap/` folder contains shared planning documents.
+The `roadmap/` folder contains shared planning documents.
 
 ## License
 

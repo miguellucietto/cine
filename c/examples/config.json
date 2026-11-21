@@ -1,0 +1,8 @@
+{
+  "app_name": "Cine demo",
+  "debug": true,
+  "http_port": 8080,
+  "retry_delays": [1, 3, 5],
+  "pair": [10, 20],
+  "tags": ["example", "local"]
+}

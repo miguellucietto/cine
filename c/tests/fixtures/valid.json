@@ -1,0 +1,8 @@
+{
+  "app_name": "Test application",
+  "debug": true,
+  "http_port": 8443,
+  "retry_delays": [2, 4, 8],
+  "pair": [11, 22],
+  "tags": ["unit", "json"]
+}
